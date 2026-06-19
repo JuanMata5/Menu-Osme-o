@@ -401,3 +401,30 @@ a {
   color: #444;
   white-space: nowrap;
 }
+
+.logo-title{
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  margin: 0;
+  line-height: 1;
+  color: #1f2937;
+}
+
+.brand .eyebrow{
+  letter-spacing: .25rem;
+  font-size: .75rem;
+  font-weight: 600;
+  color: #c17f00;
+  text-transform: uppercase;
+}
+
+.site-header{
+  padding: 2rem 0;
+}
+
+.brand{
+  display:flex;
+  flex-direction:column;
+  gap:.25rem;
+}

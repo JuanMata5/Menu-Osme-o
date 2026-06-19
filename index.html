@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -12,93 +13,148 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="🍽️ El Osmeño | Menú Digital" />
   <meta property="og:description" content="Consultá nuestro menú actualizado y hacé tu pedido por WhatsApp." />
-  <meta property="og:image" content="https://tusitio.com/img/portada-menu.jpg" />
-  <meta property="og:url" content="https://tusitio.com" />
+  <meta property="og:image" content="https://TU-SITIO.com/portada-menu.jpg" />
+  <meta property="og:url" content="https://TU-SITIO.com" />
   <meta property="og:site_name" content="El Osmeño" />
 
   <!-- Twitter/X -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="🍽️ El Osmeño | Menú Digital" />
   <meta name="twitter:description" content="Consultá nuestro menú actualizado y hacé tu pedido por WhatsApp." />
-  <meta name="twitter:image" content="https://tusitio.com/img/portada-menu.jpg" />
+  <meta name="twitter:image" content="https://TU-SITIO.com/portada-menu.jpg" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+
   <header class="site-header">
     <div class="brand">
-      <div class="logo-circle">🍽️</div>
-      <div>
-        <p class="eyebrow">Restaurante</p>
-        <h1>El Osmeño</h1>
-      </div>
+      <p class="eyebrow">COCINA ARGENTINA</p>
+      <h1 class="logo-title">El Osmeño</h1>
     </div>
+
     <div class="header-info">
-      <p>Menú renovado con los mejores sabores argentinos</p>
-      <a href="#contacto" class="button button-secondary">Reservar / Contacto</a>
+      <p>Sabores auténticos de la cocina argentina preparados todos los días.</p>
+      <a href="#contacto" class="button button-secondary">
+        Contacto
+      </a>
     </div>
   </header>
 
   <main class="page-content">
-    <section class="hero-card">    
+
+    <section class="hero-card">
+
+      <div class="hero-intro">
+        <h2>
+          Disfrutá de nuestras especialidades preparadas con ingredientes frescos y recetas tradicionales.
+        </h2>
+
+        <p class="hero-text">
+          Desde hamburguesas, pizzas y bebidas hasta postres caseros.
+          Todo nuestro menú se actualiza automáticamente para que siempre veas los precios vigentes.
+        </p>
+      </div>
+
       <div class="hero-meta">
+
         <div>
           <span class="eyebrow">🍔</span>
-          <p>Menu digital</p>
+          <p>Menú digital</p>
         </div>
+
         <div>
           <span class="eyebrow">🍽️</span>
           <p>Desayunos, comidas y cenas</p>
         </div>
+
         <div>
           <span class="eyebrow">🚗</span>
-          <p>Envios a domicilio</p>
+          <p>Envíos a domicilio</p>
         </div>
+
+        <div>
+          <span class="eyebrow">👨‍🍳</span>
+          <p>Platos preparados al momento</p>
+        </div>
+
         <div>
           <span class="eyebrow">📞</span>
-          <p>Reservaciones por WhatsApp</p>
+          <p>Pedidos por WhatsApp</p>
         </div>
+
       </div>
+
     </section>
 
     <section class="menu-controls">
-      <div class="status-message" id="statusMessage">Actualizando menú…</div>
+      <div class="status-message" id="statusMessage">
+        Actualizando menú...
+      </div>
     </section>
 
     <section id="menuContainer" class="menu-container"></section>
 
     <section class="info-section" id="contacto">
+
       <h2>Contacto y horario</h2>
+
       <div class="info-grid">
+
         <div class="info-card">
-          <h3>Horario</h3>
+          <h3>🕒 Horario</h3>
           <p>Lunes a domingo</p>
-          <p>09:00 - 23:00 hs </p>
+          <p>09:00 a 23:00 hs</p>
         </div>
+
         <div class="info-card">
-          <h3>Dirección</h3>
-          <p>Av. Belgrano 3438, Cdad. Autónoma de Buenos Aires</p>
+          <h3>📍 Dirección</h3>
+          <p>Av. Belgrano 3438</p>
+          <p>Ciudad Autónoma de Buenos Aires</p>
         </div>
+
         <div class="info-card">
-          <h3>WhatsApp</h3>
-          <p><a class="link" href="https://wa.me/5491125189628" target="_blank" rel="noreferrer">+54 9 11 2518-9628</a></p>
+          <h3>📱 WhatsApp</h3>
+          <p>
+            <a
+              class="link"
+              href="https://wa.me/5491125189628"
+              target="_blank"
+              rel="noreferrer"
+            >
+              +54 9 11 2518-9628
+            </a>
+          </p>
         </div>
+
       </div>
+
     </section>
+
   </main>
 
-  <a class="whatsapp-float" href="https://wa.me/5491125189628" target="_blank" rel="noreferrer" aria-label="Enviar WhatsApp">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.672.15-.198.297-.767.967-.94 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.173.198-.297.298-.495.099-.198.05-.372-.025-.52-.075-.149-.672-1.611-.92-2.204-.242-.579-.487-.5-.672-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.273-.198-.57-.347m-5.421 7.403h-.001c-4.999 0-9.063-4.059-9.063-9.052 0-5.009 4.064-9.068 9.062-9.068 2.422 0 4.692.947 6.411 2.67 1.72 1.723 2.663 3.995 2.663 6.418 0 5-.998 9.054-9.072 9.054m8.413-18.814c-5.807 0-10.52 4.704-10.52 10.5 0 1.847.5 3.602 1.449 5.135l-1.543 5.637 5.783-1.517c1.502.822 3.204 1.254 4.83 1.254 5.804 0 10.52-4.705 10.52-10.5 0-5.796-4.716-10.5-10.52-10.5"/></svg>
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/5491125189628"
+    target="_blank"
+    rel="noreferrer"
+    aria-label="Enviar WhatsApp"
+  >
+    📱
   </a>
 
   <footer class="site-footer">
-    <p>Menú actualizado en tiempo real para que disfrutes de lo mejor de la cocina argentina.</p>
-    <p>Pedí tu próximo plato por WhatsApp y acercate a disfrutar.</p>
+    <p>🍽️ Menú actualizado en tiempo real.</p>
+    <p>📱 Realizá tu pedido por WhatsApp y disfrutá de nuestros mejores platos.</p>
   </footer>
 
   <script src="script.js"></script>
+
 </body>
 </html>
