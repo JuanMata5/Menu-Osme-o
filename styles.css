@@ -344,3 +344,64 @@ button, input, a {
     height: 64px;
   }
 }
+
+/* ===== MODO OSCURO ===== */
+
+body.dark {
+  --bg: #0f0f10;
+  --surface: #1a1a1d;
+  --surface-strong: #222226;
+  --text: #f5f5f5;
+  --muted: #b5b5b5;
+  --accent-soft: rgba(155, 47, 26, 0.25);
+  background: #0f0f10;
+}
+
+body.dark .site-header,
+body.dark .hero-card,
+body.dark .category-card,
+body.dark .info-card {
+  background: #1a1a1d;
+  color: var(--text);
+  border-color: rgba(255,255,255,0.08);
+}
+
+body.dark .menu-item {
+  background: #222226;
+  color: var(--text);
+}
+
+body.dark .menu-item p {
+  color: var(--muted);
+}
+
+body.dark .status-message {
+  background: #222226;
+  color: var(--muted);
+}
+
+body.dark .search-box input {
+  background: #1a1a1d;
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+body.dark .price {
+  color: #ff8a6b;
+}
+
+/* Botón toggle */
+.theme-toggle {
+  background: transparent;
+  border: 1px solid rgba(155, 47, 26, 0.3);
+  padding: 10px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  color: var(--accent);
+  transition: 0.2s;
+}
+
+body.dark .theme-toggle {
+  color: #fff;
+  border-color: rgba(255,255,255,0.2);
+}

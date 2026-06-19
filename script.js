@@ -197,3 +197,26 @@ async function initMenuApp() {
 }
 
 initMenuApp();
+
+// ===== MODO OSCURO =====
+const themeToggle = document.getElementById('themeToggle');
+
+// cargar preferencia
+const savedTheme = localStorage.getItem('theme');
+
+if (savedTheme === 'dark') {
+  document.body.classList.add('dark');
+  themeToggle.textContent = '☀️ Modo claro';
+}
+
+themeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+
+  const isDark = document.body.classList.contains('dark');
+
+  themeToggle.textContent = isDark
+    ? '☀️ Modo claro'
+    : '🌙 Modo oscuro';
+
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+});
